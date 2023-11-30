@@ -60,26 +60,28 @@ header .nav__list-item {
 }
 
 /* MAIN */
-.section__img {
+main > section {
+    padding: calc(var(--base-spacing)*2) 0;
+}
+
+main .container > * {
+    margin: var(--base-spacing);
+}
+
+main .section__img {
     width: 70%;
 }
 
-.section__txt {
+main .section__txt {
     width: 30%;
 }
 
 /* HERO SECTION */
 .hero {
     background-color: #b4d0e7;
-    padding-top: var(--base-spacing);
 }
 
 /* PLANS SECTION */
-.plans .container > * {
-    margin-top: var(--base-spacing);
-    margin-bottom: var(--base-spacing);
-}
-
 .plans .d-flex.section__cnt {
     justify-content: space-between;
     gap: var(--base-spacing);
@@ -87,4 +89,9 @@ header .nav__list-item {
 
 .plans .section__cnt > * {
     flex-grow: 1;
+}
+
+/* INFO SECTION */
+.info .d-flex {
+    flex-direction: row-reverse;
 }
