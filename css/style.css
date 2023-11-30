@@ -106,3 +106,23 @@ main .section__txt {
 .functions .section__card {
     width: calc(100% / 3 - var(--base-spacing));
 }
+
+/* CUSTOMERS SECTION */
+
+/* BLOCKS SECTION */
+.blocks {
+    padding: 0;
+}
+
+.blocks .block-big {
+    width: calc(100% / 3);
+    height: calc(100vw /3);
+}
+
+.blocks .d-flex.block-big {
+    flex-wrap: wrap;
+}
+
+.blocks .block-small {
+    width: calc(100% / 2);
+}
