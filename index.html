@@ -25,17 +25,19 @@
 <body>
 
     <!-- HEADER - flex container -->
-    <header class="d-flex debug">
+    <header class="d-flex">
 
         <div class="header__section" id="header-left">
 
             <!-- navbar sx -->
             <nav class="header__nav">
                 <!-- lista di link con logo -->
-                <ul class="nav__list">
+                <ul class="nav__list d-flex">
                     <li class="nav__list-item">
                         <!-- LOGO -->
-                        <a class="nav__link" href="#">Lorem</a>
+                        <a class="nav__link" href="#">
+                            <img class="logo" src="./img/d-logo-small.png" alt="Dropbox-logo">
+                        </a>
                     </li>
                     <li class="nav__list-item">
                         <a class="nav__link" href="#">Lorem</a>
@@ -56,7 +58,7 @@
             <!-- navbar dx -->
             <nav class="header__nav ">
                 <!-- lista di link con button -->
-                <ul class="nav__list">
+                <ul class="nav__list d-flex">
                     <li class="nav__list-item">
                         <a class="nav__link" href="#">Lorem</a>
                     </li>
@@ -68,7 +70,11 @@
                     </li>
                     <li class="nav__list-item">
                         <!-- BUTTON -->
-                        <a class="nav__link" href="#">Lorem</a>
+                        <a class="nav__link" href="#">
+                            <button class="btn btn-primary">
+                                Inizia
+                            </button>
+                        </a>
                     </li>
                 </ul>
             </nav>
