@@ -24,8 +24,8 @@ a {
 .debug {
     background-color: azure;
     border: 2px solid blue;
-    /* padding: 20px;
-    min-height: 50px; */
+    /* padding: 20px; */
+    min-height: 50px;
 }
 
 /* UTILITY */
@@ -35,6 +35,17 @@ a {
 
 .d-flex {
     display: flex;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 60%;
+}
+
+.container.cntr-large {
+    width: 75%;
+    max-width: 1080px;
+    
 }
 
 /* HEADER */
@@ -47,3 +58,20 @@ header .nav__list-item {
     display: inline-block;
     margin: var(--base-spacing);
 }
+
+/* MAIN */
+.section__img {
+    width: 70%;
+}
+
+.section__txt {
+    width: 30%;
+}
+
+/* HERO SECTION */
+main .hero {
+    background-color: #b4d0e7;
+    padding-top: calc(var(--base-spacing)*2);
+}
+
+
