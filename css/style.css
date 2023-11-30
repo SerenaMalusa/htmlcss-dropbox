@@ -148,3 +148,27 @@ main .cnt__small {
 .faq .section__question:last-child {
     border-bottom: 1px solid #b3b3b3;  
 }
+
+/* FOOTER */
+footer {
+    background-color: #000000;
+    
+    /* color: white; */
+}
+
+footer .footer__top {
+    padding: calc(var(--base-spacing)*3) 0;
+}
+
+footer .footer__top .d-flex {
+    justify-content: space-between;
+}
+
+footer .footer__bottom {
+    padding-bottom: var(--base-spacing);
+}
+
+footer hr {
+    background-color: black;
+    width: calc(var(--base-spacing)*5);
+}
