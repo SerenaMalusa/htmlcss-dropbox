@@ -30,7 +30,7 @@ a {
 
 /* UTILITY */
 :root {
-    --base-spacing: 10px;
+    --base-spacing: 20px;
 }
 
 .d-flex {
@@ -42,7 +42,7 @@ a {
     max-width: 60%;
 }
 
-.container.cntr-large {
+.container.container-big {
     width: 75%;
     max-width: 1080px;
     
@@ -51,12 +51,12 @@ a {
 /* HEADER */
 header.d-flex {
     justify-content: space-between;
-    padding: var(--base-spacing) 0;
+    padding: calc(var(--base-spacing)/2) 0;
 }
 
 header .nav__list-item {
     display: inline-block;
-    margin: var(--base-spacing);
+    margin: calc(var(--base-spacing)/2);
 }
 
 /* MAIN */
@@ -69,9 +69,22 @@ header .nav__list-item {
 }
 
 /* HERO SECTION */
-main .hero {
+.hero {
     background-color: #b4d0e7;
-    padding-top: calc(var(--base-spacing)*2);
+    padding-top: var(--base-spacing);
 }
 
+/* PLANS SECTION */
+.plans .container > * {
+    margin-top: var(--base-spacing);
+    margin-bottom: var(--base-spacing);
+}
 
+.plans .d-flex.section__cnt {
+    justify-content: space-between;
+    gap: var(--base-spacing);
+}
+
+.plans .section__cnt > * {
+    flex-grow: 1;
+}
