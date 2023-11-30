@@ -37,7 +37,7 @@ button {
     background-color: azure;
     border: 2px solid blue;
     /* padding: 20px; */
-    min-height: 50px;
+    /* min-height: 50px; */
 }
 
 /* UTILITY */
@@ -122,16 +122,20 @@ main .cnt__small {
 }
 
 .hero .cnt__icon {
-    margin-top: calc(50vw / 6);
+    margin-top: 40%;
     margin-bottom: 20px;
     font-size: 3rem;
-    
+}
+
+.hero .cnt__large {
+    position: relative;
 }
 
 .hero .cnt__img {
     margin-top: var(--base-spacing);
     position: absolute;
-    max-width: 50vw;
+    top: 0;
+    height: 110%;
 }
 
 /* PLANS SECTION */
