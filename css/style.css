@@ -126,3 +126,8 @@ main .section__txt {
 .blocks .block-small {
     width: calc(100% / 2);
 }
+
+/* START TRIAL SECTION */
+.start-trial {
+    background-color: #b4d0e7;
+}
