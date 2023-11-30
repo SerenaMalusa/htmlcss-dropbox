@@ -8,7 +8,12 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.9rem;
-    color: #787878;
+    color: 1e2d39;
+}
+
+h1,
+h2 {
+    color: black;
 }
 
 img {
@@ -22,7 +27,7 @@ a {
 }
 
 button {
-    padding: calc(var(--base-spacing)/4) calc(var(--base-spacing)/2);
+    padding: calc(var(--base-spacing)/3) calc(var(--base-spacing)/1.5);
     border-radius: 0;
     border: none;
 }
@@ -66,6 +71,8 @@ header.d-flex {
     justify-content: space-between;
     align-items: center;
     padding: calc(var(--base-spacing)) 0;
+
+    color: #787878;;
 }
 
 header .d-flex.nav__list {
@@ -100,7 +107,31 @@ main .cnt__small {
 
 /* HERO SECTION */
 .hero {
+    padding-bottom: 0;
     background-color: #b4d0e7;
+    position: relative;
+}
+
+.hero .title {
+    font-size: 3.5rem;
+}
+
+.hero .cnt__small > * {
+    display: block;
+    margin-top: var(--base-spacing);
+}
+
+.hero .cnt__icon {
+    margin-top: calc(50vw / 6);
+    margin-bottom: 20px;
+    font-size: 3rem;
+    
+}
+
+.hero .cnt__img {
+    margin-top: var(--base-spacing);
+    position: absolute;
+    max-width: 50vw;
 }
 
 /* PLANS SECTION */
