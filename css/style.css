@@ -95,3 +95,14 @@ main .section__txt {
 .info .d-flex {
     flex-direction: row-reverse;
 }
+
+/* FUNTIONS SECTION */
+.functions .d-flex.section__cnt {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--base-spacing);
+}
+
+.functions .section__card {
+    width: calc(100% / 3 - var(--base-spacing));
+}
