@@ -65,14 +65,14 @@ main > section {
 }
 
 main .container > * {
-    margin: var(--base-spacing);
+    margin: var(--base-spacing) 0;
 }
 
-main .section__img {
+main .cnt__large {
     width: 70%;
 }
 
-main .section__txt {
+main .cnt__small {
     width: 30%;
 }
 
@@ -130,4 +130,21 @@ main .section__txt {
 /* START TRIAL SECTION */
 .start-trial {
     background-color: #b4d0e7;
+}
+
+/* FAQ SECTION */
+.faq .d-flex {
+    justify-content: space-between;
+}
+
+.faq .section__title {
+    margin-bottom: 0;
+}
+
+.faq .section__question {
+    border-top: 1px solid #b3b3b3;
+}
+
+.faq .section__question:last-child {
+    border-bottom: 1px solid #b3b3b3;  
 }
