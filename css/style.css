@@ -423,19 +423,22 @@ main > section {
 
 
 /* FAQ SECTION */
-.faq .d-flex {
+#faq .d-flex {
     justify-content: space-between;
 }
 
-.faq .section__title {
-    margin-bottom: 0;
+#faq .section__title {
+    margin-bottom: 60px;
 }
 
-.faq .section__question {
+#faq .section__question {
+    padding: 30px 0;
     border-top: 1px solid #b3b3b3;
+    color: black;
+    font-weight: bold;
 }
 
-.faq .section__question:last-child {
+#faq .section__question:last-child {
     border-bottom: 1px solid #b3b3b3;  
 }
 
