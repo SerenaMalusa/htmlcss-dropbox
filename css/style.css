@@ -18,7 +18,14 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 0.8rem;
-    color: 1e2d39;
+    color: #686767;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #000000;
 }
 
 h2 {
@@ -107,7 +114,6 @@ button {
 #page-header.d-flex {
     box-shadow: 0 3px 5px #bbc8d1;
     padding: var(--header-spacing) 0;
-    color: var(--border-color);
     
     justify-content: space-between;
     align-items: center;
