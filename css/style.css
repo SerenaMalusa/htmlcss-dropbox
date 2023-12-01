@@ -1,7 +1,7 @@
 /* CUSTOM PROPS */
 :root {
     --cnt-spacing: 20px;
-    --header-spacing: 16px;
+    --header-spacing: 18px;
     --hero-overflow: 60px;
 }
 
@@ -21,6 +21,10 @@ body {
 h1,
 h2 {
     color: black;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 img {
@@ -82,9 +86,6 @@ hr {
     border-radius: 0;
     border: none;
     padding: 8px 16px;
-}
-
-.btn-primary {
     background-color: #0061ff;
     border: 0.5px solid gray;
     color: white;
@@ -92,8 +93,9 @@ hr {
 
 /* HEADER */
 #page-header.d-flex {
+    box-shadow: 0 3px 5px #bbc8d1;
     padding: var(--header-spacing) 0;
-    color: #787878;;
+    color: #787878;
     
     justify-content: space-between;
     align-items: center;
@@ -154,12 +156,41 @@ main > section {
 
 
 /* PLANS SECTION */
-.plans .d-flex.section__cnt {
+#plans .container {
+    margin-top: 60px;
+}
+
+#plans .container > * {
+    margin-bottom: var(--cnt-spacing);
+}
+
+#plans .plan__choices {
+    margin-top: var(--cnt-spacing);
+}
+
+#plans .choices__label {
+    margin-right: var(--cnt-spacing);
+}
+
+#plans .choices__select {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid #787878;
+}
+
+#plans .choices__select.clicked {
+    width: 18px;
+    height: 18px;
+    border: 4px solid #015cff;
+}
+
+#plans .d-flex.section__cnt {
     justify-content: space-between;
     gap: var(--cnt-spacing);
 }
 
-.plans .section__cnt > * {
+#plans .section__cnt > * {
     flex-grow: 1;
 }
 
