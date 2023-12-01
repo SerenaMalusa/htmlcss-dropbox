@@ -313,6 +313,9 @@ main > section {
 }
 
 /* CUSTOMERS SECTION */
+#customers .section__title > * {
+    margin-bottom: var(--cnt-spacing);
+}
 
 /* BLOCKS SECTION */
 .blocks {
