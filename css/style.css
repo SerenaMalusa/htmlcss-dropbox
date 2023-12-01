@@ -110,6 +110,7 @@ button {
 
 .btn-tertiary {
     background-color: white;
+    padding: 8px 32px;
     border: none;
     color: inherit;
 }
