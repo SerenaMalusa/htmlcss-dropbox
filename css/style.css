@@ -256,6 +256,19 @@ main > section {
     margin: var(--card-spacing) 0;
 }
 
+/* icone liste card-top*/
+#plans .card__top li:first-child {
+    list-style-image: url(../img/user-solid.svg);
+}
+
+#plans .card__top li:nth-child(2) {
+    list-style-image: url(../img/folder-solid.svg);
+}
+
+#plans .card__top li:last-child {
+    list-style-image: url(../img/share-nodes-solid.svg);
+}
+
 /* card center */
 #plans .card__center {
     margin: calc(var(--card-spacing)*3) 0;
@@ -263,6 +276,11 @@ main > section {
 
 #plans .card__center > div {
     margin: calc(var(--card-spacing)*3) 0;
+}
+
+/* card bottom */
+#plans .card__bottom .card__bottom__list {
+    list-style-image: url(../img/check-solid.svg);
 }
 
 /* regole per allineamneto cards su bottoni*/
@@ -467,7 +485,7 @@ footer .nav__list {
     list-style: none;
 }
 
-footer .nav__list h3 {
+footer h3 {
     margin: var(--cnt-spacing) 0;
 }
 
