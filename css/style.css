@@ -347,7 +347,7 @@ main > section {
     filter: invert(100%);
 }
 
-#blocks .block-big > .block:first-child {
+#blocks .bloks__left > .block:first-child {
     background-color: #a2d39b;
     border: 10px solid #d1e9cd;
 }
@@ -358,8 +358,16 @@ main > section {
     top: calc(50% - 80px/2);
 }
 
-#blocks .block-big > .block:nth-child(2) {
+#blocks .bloks__left > .block:nth-child(2) {
     background-color: #61082b;
+}
+
+#blocks .bloks__left > .block:nth-child(3) {
+    background-color: #0093ce;
+}
+
+#blocks .bloks__left > .block:nth-child(4) {
+    background-color: #ff1c1c;
 }
 
 /* START TRIAL SECTION */
