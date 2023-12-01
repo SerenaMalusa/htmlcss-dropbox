@@ -173,6 +173,7 @@ main > section {
 
 #hero .cnt__icon {
     font-size: 3rem;
+    color: black;
     position: absolute;
     bottom: 0;
 }
