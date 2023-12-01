@@ -34,11 +34,6 @@ img {
     display: block;
 }
 
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
 hr {
     width: 120px;
     color: var(--border-color);
@@ -85,12 +80,12 @@ hr {
 }
 
 .btn {
-    border-radius: 0;
-    border: none;
-    padding: 8px 16px;
     background-color: #0061ff;
+    border-radius: 0;
     border: 0.5px solid gray;
+    padding: 8px 16px;
     color: white;
+    text-decoration: none;
 }
 
 /* HEADER */
@@ -110,6 +105,12 @@ hr {
 #page-header .nav__list-item {
     display: inline-block;
     margin: 0 var(--header-spacing);
+}
+
+/* scelto selettore meno specifico per non sovrascrivere stile bottone*/
+header a {
+    text-decoration: none;
+    color: inherit;
 }
 
 #page-header .logo {
@@ -197,6 +198,7 @@ main > section {
 
 #plans .section__cnt > * {
     flex-grow: 1;
+    width: calc(100% / 3 - var(--cnt-spacing));
 }
 
 /* cards */
@@ -236,6 +238,12 @@ main > section {
 
 #plans .card__center > div {
     margin: calc(var(--card-spacing)*3) 0;
+}
+
+/* regole per allineamneto cards su bottoni*/
+#plans .card__top,
+#plans .card__bottom {
+    min-height: 250px;
 }
 
 /* INFO SECTION */
