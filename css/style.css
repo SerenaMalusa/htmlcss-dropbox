@@ -299,6 +299,7 @@ main > section {
 }
 
 #plans .cnt__small {
+    padding-top: 15px;
     text-align: end;
 }
 
