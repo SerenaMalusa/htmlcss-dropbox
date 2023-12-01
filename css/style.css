@@ -1,6 +1,7 @@
 /* CUSTOM PROPS */
 :root {
-    --base-spacing: 20px;
+    --cnt-spacing: 20px;
+    --header-spacing: 16px;
     --hero-overflow: 60px;
 }
 
@@ -32,18 +33,17 @@ a {
     color: inherit;
 }
 
-button {
-    padding: calc(var(--base-spacing)/3) calc(var(--base-spacing)/1.5);
-    border-radius: 0;
-    border: none;
+hr {
+    width: 120px;
+    color: #787878;
 }
 
 /* DEBUG */
 .debug {
+    min-height: 50px;
     background-color: azure;
     border: 2px solid blue;
     padding: 20px;
-    min-height: 50px;
 }
 
 /* UTILITY */
@@ -78,6 +78,11 @@ button {
     width: 70%;
 }
 
+.btn {
+    border-radius: 0;
+    border: none;
+    padding: 8px 16px;
+}
 
 .btn-primary {
     background-color: #0061ff;
@@ -86,40 +91,36 @@ button {
 }
 
 /* HEADER */
-header.d-flex {
+#page-header.d-flex {
+    padding: var(--header-spacing) 0;
+    color: #787878;;
+    
     justify-content: space-between;
     align-items: center;
-    padding: calc(var(--base-spacing)) 0;
-
-    color: #787878;;
 }
 
-header .d-flex.nav__list {
+#page-header .d-flex.nav__list {
     align-items: center;
 }
 
-header .nav__list-item {
+#page-header .nav__list-item {
     display: inline-block;
-    margin: 0 calc(var(--base-spacing)/2);
+    margin: 0 var(--header-spacing);
 }
 
-header .logo {
+#page-header .logo {
     height: 20px;
 }
 
 /* MAIN */
 main > section {
-    padding: calc(var(--base-spacing)*2) 0;
-}
-
-main .container > * {
-    margin: var(--base-spacing) 0;
+    padding: 60px;
 }
 
 /* HERO SECTION */
 #hero {
-    padding-bottom: 0;
     background-color: #b4d0e7;
+    padding-bottom: 0;
     position: relative;
 }
 
@@ -137,7 +138,7 @@ main .container > * {
 
 #hero .cnt__small > * {
     display: block;
-    margin-bottom: var(--base-spacing);
+    margin-bottom: var(--cnt-spacing);
 }
 
 #hero .cnt__icon {
@@ -155,7 +156,7 @@ main .container > * {
 /* PLANS SECTION */
 .plans .d-flex.section__cnt {
     justify-content: space-between;
-    gap: var(--base-spacing);
+    gap: var(--cnt-spacing);
 }
 
 .plans .section__cnt > * {
@@ -171,11 +172,11 @@ main .container > * {
 .functions .d-flex.section__cnt {
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: var(--base-spacing);
+    gap: var(--cnt-spacing);
 }
 
 .functions .section__card {
-    width: calc(100% / 3 - var(--base-spacing));
+    width: calc(100% / 3 - var(--cnt-spacing));
 }
 
 /* CUSTOMERS SECTION */
@@ -228,7 +229,7 @@ footer {
 }
 
 footer .footer__top {
-    padding: calc(var(--base-spacing)*3) 0;
+    padding: 60px 0;
 }
 
 footer .footer__top .d-flex {
@@ -236,10 +237,9 @@ footer .footer__top .d-flex {
 }
 
 footer .footer__bottom {
-    padding-bottom: var(--base-spacing);
+    padding-bottom: var(--cnt-spacing);
 }
 
 footer hr {
     color: white;
-    width: calc(var(--base-spacing)*5);
 }
