@@ -36,8 +36,8 @@ button {
 .debug {
     background-color: azure;
     border: 2px solid blue;
-    /* padding: 20px; */
-    /* min-height: 50px; */
+    padding: 20px;
+    min-height: 50px;
 }
 
 /* UTILITY */
@@ -106,37 +106,40 @@ main .cnt__small {
 }
 
 /* HERO SECTION */
-.hero {
+#hero {
     padding-bottom: 0;
     background-color: #b4d0e7;
     position: relative;
 }
 
-.hero .title {
+#hero .container > * {
+    margin: 0;
+}
+
+#hero .title {
     font-size: 3.5rem;
 }
 
-.hero .cnt__small > * {
+#hero .cnt__small {
+    margin-top: 60px;
+}
+
+#hero .cnt__small > * {
     display: block;
-    margin-top: var(--base-spacing);
+    margin-bottom: var(--base-spacing);
 }
 
-.hero .cnt__icon {
-    margin-top: 40%;
-    margin-bottom: 20px;
+#hero .cnt__icon {
     font-size: 3rem;
-}
-
-.hero .cnt__large {
-    position: relative;
-}
-
-.hero .cnt__img {
-    margin-top: var(--base-spacing);
     position: absolute;
-    top: 0;
-    height: 110%;
+    bottom: 0;
 }
+
+#hero .cnt__img {
+    position: relative;
+    bottom: -60px;
+}
+
 
 /* PLANS SECTION */
 .plans .d-flex.section__cnt {
