@@ -1,3 +1,9 @@
+/* CUSTOM PROPS */
+:root {
+    --base-spacing: 20px;
+    --hero-overflow: 60px;
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -41,10 +47,6 @@ button {
 }
 
 /* UTILITY */
-:root {
-    --base-spacing: 20px;
-}
-
 .d-flex {
     display: flex;
 }
@@ -121,7 +123,7 @@ main .cnt__small {
 }
 
 #hero .cnt__small {
-    margin-top: 60px;
+    margin-top: var(--hero-overflow);
 }
 
 #hero .cnt__small > * {
@@ -137,7 +139,7 @@ main .cnt__small {
 
 #hero .cnt__img {
     position: relative;
-    bottom: -60px;
+    top: var(--hero-overflow);
 }
 
 
