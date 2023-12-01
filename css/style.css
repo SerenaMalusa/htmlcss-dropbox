@@ -105,9 +105,13 @@ button {
 .btn-secondary {
     background-color: white;
     border: 1px solid var(--border-color);
-    padding: 8px 16px;
     color: inherit;
-    text-decoration: none;
+}
+
+.btn-tertiary {
+    background-color: white;
+    border: none;
+    color: inherit;
 }
 
 /* HEADER */
@@ -403,9 +407,20 @@ main > section {
 }
 
 /* START TRIAL SECTION */
-.start-trial {
+#start-trial {
     background-color: #b4d0e7;
 }
+
+#start-trial .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+#start-trial .cnt__small {
+    text-align: end;
+    padding-top: 15px;
+}
+
 
 /* FAQ SECTION */
 .faq .d-flex {
