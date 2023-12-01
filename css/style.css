@@ -246,6 +246,15 @@ main > section {
     min-height: 250px;
 }
 
+/* section recap - card al 100% */
+#plans .cnt__large > * {
+    margin: var(--card-spacing) 0;
+}
+
+#plans .cnt__large h4 ~ p {
+    margin-top: calc(var(--card-spacing)*3);
+}
+
 /* INFO SECTION */
 .info .d-flex {
     flex-direction: row-reverse;
