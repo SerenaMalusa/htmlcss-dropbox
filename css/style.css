@@ -444,6 +444,7 @@ main > section {
 
 /* FOOTER */
 footer {
+    border-bottom: 2px solid white;
     background-color: #000000;
     color: white;
 }
@@ -482,8 +483,10 @@ footer .nav__link {
 
 footer .footer__bottom {
     padding-bottom: var(--cnt-spacing);
+    color: var(--border-color);
 }
 
 footer hr {
     color: white;
+    margin: calc(var(--cnt-spacing)*2) 0;
 }
