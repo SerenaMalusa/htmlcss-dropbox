@@ -170,6 +170,7 @@ main > section {
 
 #plans .choices__label {
     margin-right: var(--cnt-spacing);
+    margin-left: 5px;
 }
 
 #plans .choices__select {
@@ -192,6 +193,17 @@ main > section {
 
 #plans .section__cnt > * {
     flex-grow: 1;
+}
+
+#plans .section__card {
+    border: 1px solid #787878;
+}
+
+#plans .card__header {
+    border-bottom: 1px solid #787878;
+    padding: 8px 0;
+    font-size: 0.9rem;
+    text-align: center;
 }
 
 /* INFO SECTION */
