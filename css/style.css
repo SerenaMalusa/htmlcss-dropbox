@@ -318,21 +318,38 @@ main > section {
 }
 
 /* BLOCKS SECTION */
-.blocks {
+#blocks {
+    margin-top: 60px;
     padding: 0;
 }
 
-.blocks .block-big {
+/* regole per rendere i blocchi quadrati*/
+#blocks .block-big {
     width: calc(100% / 3);
     height: calc(100vw /3);
 }
 
-.blocks .d-flex.block-big {
+#blocks .d-flex.block-big {
     flex-wrap: wrap;
 }
 
-.blocks .block-small {
+#blocks .block-small {
     width: calc(100% / 2);
+    height: calc(100% / 2);;
+}
+
+/* contenuto dei blocchi */
+#blocks .block__img {
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: calc(50% - 50px/2);
+    filter: invert(100%);
+}
+
+#blocks .block-big > .block:first-child {
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
 }
 
 /* START TRIAL SECTION */
