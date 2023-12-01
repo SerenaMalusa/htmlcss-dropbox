@@ -340,16 +340,26 @@ main > section {
 
 /* contenuto dei blocchi */
 #blocks .block__img {
-    height: 50px;
+    height: 30px;
     margin: 0 auto;
     position: relative;
-    top: calc(50% - 50px/2);
+    top: calc(50% - 30px/2);
     filter: invert(100%);
 }
 
 #blocks .block-big > .block:first-child {
     background-color: #a2d39b;
     border: 10px solid #d1e9cd;
+}
+
+#blocks .img-big {
+    height: 80px;
+    position: relative;
+    top: calc(50% - 80px/2);
+}
+
+#blocks .block-big > .block:nth-child(2) {
+    background-color: #61082b;
 }
 
 /* START TRIAL SECTION */
