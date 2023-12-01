@@ -384,6 +384,24 @@ main > section {
     margin-bottom: calc(var(--cnt-spacing)*2);
 }
 
+/* contenuto blocchi piccoli a dx */
+#blocks #world-bicile {
+    background-color: #d5001f;
+}
+
+#blocks #hearst-corp {
+    background-color: #b4d0e7;
+    padding: 0 15px;
+}
+
+#blocks #loney-planet {
+    background-color: #0d2481;
+}
+
+#blocks #clear-channel {
+    background-color: #ffd830;
+}
+
 /* START TRIAL SECTION */
 .start-trial {
     background-color: #b4d0e7;
