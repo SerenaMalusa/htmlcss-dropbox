@@ -251,7 +251,7 @@ main > section {
 
 #plans .card__body ul {
     margin-top: calc(var(--card-spacing)*3);
-    padding-left: var(--card-spacing);
+    padding-left: 15px;
 }
 
 #plans .card__body li {
