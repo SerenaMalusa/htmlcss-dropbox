@@ -255,6 +255,10 @@ main > section {
     margin-top: calc(var(--card-spacing)*3);
 }
 
+#plans .cnt__small {
+    text-align: end;
+}
+
 /* INFO SECTION */
 .info .d-flex {
     flex-direction: row-reverse;
