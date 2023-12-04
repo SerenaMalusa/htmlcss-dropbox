@@ -104,6 +104,7 @@ button {
 
 .btn:hover {
     filter: opacity(70%);
+    cursor: pointer;
 }
 
 .btn-secondary {
