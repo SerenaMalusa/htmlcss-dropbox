@@ -478,6 +478,7 @@ main > section {
 /* FAQ SECTION */
 #faq .d-flex {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 #faq .section__title {
@@ -493,6 +494,16 @@ main > section {
 
 #faq .section__question:last-child {
     border-bottom: 1px solid #b3b3b3;  
+}
+
+#faq .section__answer {
+    display: none;
+    margin-top: 16px;
+    font-weight: 400;
+}
+
+#faq .section__question:hover .section__answer {
+    display: block;
 }
 
 /* FOOTER */
