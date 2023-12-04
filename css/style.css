@@ -102,6 +102,10 @@ button {
     text-decoration: none;
 }
 
+.btn:hover {
+    filter: opacity(70%);
+}
+
 .btn-secondary {
     background-color: white;
     border: 1px solid var(--border-color);
