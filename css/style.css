@@ -211,6 +211,10 @@ main > section {
     bottom: 0;
 }
 
+#hero .cnt__icon:hover {
+    cursor: pointer;
+}
+
 #hero .cnt__img {
     position: relative;
     top: var(--hero-overflow);
