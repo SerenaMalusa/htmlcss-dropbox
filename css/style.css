@@ -118,10 +118,10 @@ button {
 /* HEADER */
 #page-header.d-flex {
     box-shadow: 0 3px 5px #bbc8d1;
-    padding: var(--header-spacing) 0;
+    /* padding: var(--header-spacing) 0; */
     
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
 }
 
 #page-header .d-flex.nav__list {
@@ -129,12 +129,40 @@ button {
 }
 
 #page-header .nav__list-item {
+    height: 50px;
+    line-height: 50px;
     display: inline-block;
     margin: 0 var(--header-spacing);
+    vertical-align: middle;
+
+    position: relative;
+    z-index: 1;
 }
+
+#page-header .nav__list-item.list__btn {
+    line-height: 1rem;
+    padding: 8px 0;
+}
+
+#page-header .nav__list-item > * {
+    vertical-align: middle;
+}
+
+/* lineetta nera sotto link header all'hover */
+#page-header .nav__list-item:hover {
+    box-shadow: 0px 5px black;
+}
+
+
+#page-header .nav__list-item.list__logo:hover,
+#page-header .nav__list-item.list__btn:hover {
+    box-shadow: 0 0;
+}
+
 
 /* scelto selettore meno specifico per non sovrascrivere stile bottone*/
 header a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -502,6 +530,7 @@ footer .nav__link {
     text-decoration: none;
 }
 
+/* bottom section */
 footer .footer__bottom {
     padding-bottom: var(--cnt-spacing);
     color: var(--border-color);
@@ -510,4 +539,8 @@ footer .footer__bottom {
 footer hr {
     color: white;
     margin: calc(var(--cnt-spacing)*2) 0;
+}
+
+footer .select__language > * {
+    margin-right: 5px;
 }
