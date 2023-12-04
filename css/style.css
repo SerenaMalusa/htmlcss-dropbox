@@ -220,7 +220,6 @@ main > section {
     top: var(--hero-overflow);
 }
 
-
 /* PLANS SECTION */
 #plans .container {
     margin-top: 60px;
@@ -287,7 +286,7 @@ main > section {
 
 #plans .card__body ul {
     margin-top: calc(var(--card-spacing)*3);
-    padding-left: 15px;
+    padding-left: 20px;
 }
 
 #plans .card__body li {
